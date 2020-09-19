@@ -25,7 +25,7 @@
 * 시간이 되면 아래도 적용한다...
 
 <h5>MSA 적용</h5>
-```
+
 API GW (Kong) --- Server Cluster
 
      |                  |
@@ -35,4 +35,4 @@ API GW (Kong) --- Server Cluster
              |
 
            consul
-```  
+
