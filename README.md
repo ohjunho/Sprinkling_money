@@ -9,17 +9,16 @@
 - vert.x를 통해 서버 내 인스턴스 묶음 관리 (같은 IP로 다수 인스턴스 운용)
 
 <h5>서비 아키텍처</h5>
-![아키텍처](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/architecture.png)
+
+<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/architecture.png"><img src="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/architecture.png" alt="아키텍처" style="max-width:100%;"></a></p>
 
 <h5>시퀀스</h5>
-![뿌리기](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/sprinkling.png)
 
+<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/sprinkling.png"><img src="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/sprinkling.png" alt="뿌리기" style="max-width:100%;"></a></p>
 
-![받기](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/receive.png)
+<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/receive.png"><img src="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/receive.png" alt="받기" style="max-width:100%;"></a></p>
 
-
-![조회](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/retrieve.png)
-
+<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/retrieve.png"><img src="https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/retrieve.png" alt="조회" style="max-width:100%;"></a></p>
 
 ----------------------------------------
 
@@ -28,8 +27,12 @@
 <h5>MSA 적용</h5>
 ```
 API GW (Kong) --- Server Cluster
+
      |                  |
+
      -------------------
+
              |
+
            consul
 ```  
