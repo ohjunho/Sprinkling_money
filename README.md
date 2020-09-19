@@ -9,16 +9,16 @@
 - vert.x를 통해 서버 내 인스턴스 묶음 관리 (같은 IP로 다수 인스턴스 운용)
 
 <h5>서비 아키텍처</h6>
-![아키텍처](image/아키텍처.png)
+![아키텍처](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png?raw=true)
 
 <h5>시퀀스</h5>
-![뿌리기](image/뿌리기.png)
+![뿌리기](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EB%BF%8C%EB%A6%AC%EA%B8%B0.png?raw=true)
 
 
-![받기](image/받기.png)
+![받기](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EB%B0%9B%EA%B8%B0.png?raw=true)
 
 
-![조회](image/조회.png)
+![조회](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EC%A1%B0%ED%9A%8C.png?raw=true)
 
 
 ----------------------------------------
