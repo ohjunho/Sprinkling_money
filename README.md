@@ -8,24 +8,24 @@
 - 스케줄링은 트리거 방식을 통해 간략하게 구현 
 - vert.x를 통해 서버 내 인스턴스 묶음 관리 (같은 IP로 다수 인스턴스 운용)
 
-<h5>서비 아키텍처</h6>
-![아키텍처](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png?raw=true)
+<h5>서비 아키텍처</h5>
+![아키텍처](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98.png)
 
 <h5>시퀀스</h5>
-![뿌리기](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EB%BF%8C%EB%A6%AC%EA%B8%B0.png?raw=true)
+![뿌리기](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/%EB%BF%8C%EB%A6%AC%EA%B8%B0.png)
 
 
-![받기](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EB%B0%9B%EA%B8%B0.png?raw=true)
+![받기](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/%EB%B0%9B%EA%B8%B0.png)
 
 
-![조회](https://github.com/ohjunho/Sprinkling_money/blob/master/image/%EC%A1%B0%ED%9A%8C.png?raw=true)
+![조회](https://raw.githubusercontent.com/ohjunho/Sprinkling_money/master/image/%EC%A1%B0%ED%9A%8C.png)
 
 
 ----------------------------------------
 
 * 시간이 되면 아래도 적용한다...
 
-<h3>MSA 적용</h3>
+<h5>MSA 적용</h5>
 ```
 API GW (Kong) --- Server Cluster
      |                  |
