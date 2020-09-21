@@ -1,0 +1,138 @@
+[
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.repository.SprinklingRepository",
+    "options": {
+      "worker": false,
+      "config": {
+        "database": {
+          "jdbc": {
+            "url": "jdbc:hsqldb:hsql://localhost:9001/",
+            "driver_class": "org.hsqldb.jdbcDriver"
+          },
+          "topic": "DB_BATCH",
+          "poll.interval": 1000
+        }
+      },
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.repository.RetrieveRepository",
+    "options": {
+      "worker": false,
+      "config": {
+        "database": {
+          "jdbc": {
+            "url": "jdbc:hsqldb:hsql://localhost:9001/",
+            "driver_class": "org.hsqldb.jdbcDriver"
+          },
+          "topic": "DB_BATCH",
+          "poll.interval": 1000
+        }
+      },
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.repository.ReceiveRepository",
+    "options": {
+      "worker": false,
+      "config": {
+        "database": {
+          "jdbc": {
+            "url": "jdbc:hsqldb:hsql://localhost:9001/",
+            "driver_class": "org.hsqldb.jdbcDriver"
+          },
+          "topic": "DB_BATCH",
+          "poll.interval": 1000
+        }
+      },
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.service.SprinklingService",
+    "options": {
+      "worker": false,
+      "config": {},
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.service.RetrieveService",
+    "options": {
+      "worker": false,
+      "config": {},
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.service.ReceiveService",
+    "options": {
+      "worker": false,
+      "config": {},
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  },
+  {
+    "class": "com.kakao.pay.test.sprinkling_money.rest.RestVerticle",
+    "options": {
+      "worker": false,
+      "config": {
+        "port": 8080,
+        "timeout": 20,
+        "bodyLimitSize": 1024
+      },
+      "multiThreaded": false,
+      "isolationGroup": null,
+      "ha": true,
+      "instances": 8,
+      "workerPoolName": "",
+      "workerPoolSize": 16,
+      "maxWorkerExecuteTime": 60000000000,
+      "maxWorkerExecuteTimeUnit": 0
+    }
+  }
+]

@@ -1,0 +1,48 @@
+{
+    "definitions": {},
+    "type": "object",
+    "title": "sprinkling schema",
+    "default": {},
+    "required": [
+        "total_amount",
+        "target_count",
+        "user_list"
+    ],
+    "properties": {
+        "total_amount": {
+            "$id": "#/properties/total_amount",
+            "type": "integer",
+            "title": "The total_amount schema",
+            "pattern": "^[0-9]{1,10}$"
+        },
+        "target_count": {
+            "$id": "#/properties/target_count",
+            "type": "integer",
+            "title": "The target_count schema",
+            "uniqueItems": true,
+            "minimum": 1,
+            "pattern": "^[0-9]{2}$"
+        },
+        "user_list": {
+            "$id": "#/properties/user_list",
+            "type": "array",
+            "title": "The user_list schema",
+            "default": [],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/user_list/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/user_list/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "minLength": 1,
+                        "maxLength": 100,
+                        "pattern": "^(.*)+$"
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
