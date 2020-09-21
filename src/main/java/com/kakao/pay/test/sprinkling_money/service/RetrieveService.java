@@ -67,8 +67,7 @@ public class RetrieveService extends AbstractVerticle {
 
             for (Object item : src) {
                 JsonArray jsonArray = (JsonArray) item;
-                users.add(jsonArray.getString(3));
-                users.add(jsonArray.getInteger(4));
+                users.add( new JsonObject().put(jsonArray.getString(3), jsonArray.getInteger(4)));
                 result.put("users", users);
                 amount += jsonArray.getInteger(4);
             }

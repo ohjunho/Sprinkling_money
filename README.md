@@ -40,3 +40,10 @@ API GW (Kong) --- Server Cluster
 
            consul
 
+
+
+<h5>기타</h5>
+ - hsqldb 실행 
+
+    >java -classpath lib/hsqldb-2.5.1.jar org.hsqldb.server.Server
+

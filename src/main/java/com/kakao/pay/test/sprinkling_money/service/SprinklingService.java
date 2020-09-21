@@ -50,6 +50,10 @@ public class SprinklingService extends AbstractVerticle {
 
             // 사용된(제외할) 토큰 가져오기
             vertx.eventBus().request(Constants.EB_SPRINKLING_GET_TOKEN_REPO,data,rs ->{
+                if(rs.failed()){
+                    msg.fail(1003, rs.cause().getMessage());
+                    return;
+                }
                 log.info("rs : {}",rs.result().body());
 
                 JsonArray result = new JsonArray();
